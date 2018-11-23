@@ -1,0 +1,68 @@
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+.todo-item {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 10px 30px 10px 50px;
+    box-sizing: border-box;
+    max-width: 670px;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: 4px 5px 21px -8px rgba(0,0,0,0.75);
+    animation: slideInUp 0.6s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    min-height: 80px;
+    transition: all 0.3s ease;
+}
+
+.check {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    position: absolute;
+    left: -55px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.change-task {
+    padding: 10px 0;
+    width: 70%;
+    background: transparent;
+    height: 80%;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+    flex-grow: 1;
+    opacity: .7;
+}
+
+.count {
+    font-size: 18px;
+    color: #fff;
+    flex-grow: 1;
+    font-weight: 500;
+}
+
+.change-task::placeholder {
+    color: #fff;
+}
+
+.todo-item p {
+    font-size: 18px;
+    color: #fff;
+    flex-grow: 10;
+}
