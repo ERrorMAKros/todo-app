@@ -25,7 +25,7 @@ class TodoItem extends Component {
     editDone(e) {
         this.setState({ editShow: false });
         this.props.editTask({
-            value: this.state.taskValue,
+            value: this.state.taskValue || this.props.task,
             timestamp: this.props.timestamp,
         });
     }
@@ -34,7 +34,7 @@ class TodoItem extends Component {
         this.setState({ editShow: false });
           if (this.state.taskValue.trim()) {
             this.props.editTask({
-                value: this.state.taskValue,
+                value: this.state.taskValue || this.props.task,
                 timestamp: this.props.timestamp
             });
           }

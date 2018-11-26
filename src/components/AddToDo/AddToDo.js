@@ -28,6 +28,9 @@ class AddToDo extends Component {
                 taskDone: false
             });
         }
+        this.setState({
+            fileldValue: ''
+        });
     }
     render() {
         const { classes } = this.props;
@@ -41,6 +44,7 @@ class AddToDo extends Component {
                     autoFocus={true}
                     className={classes.textField}
                     onChange={this.handleChange.bind(this)}
+                    value={this.state.fileldValue}
                     InputProps={{
                         classes: {
                             root: classes.input,

@@ -1,6 +1,6 @@
 
 import {
-    ADD_TODO,
+    ADD_TASK,
     DELETE_TASK,
     EDIT_TASK,
     DRAG_TASK,
@@ -13,7 +13,7 @@ const initialState = {
 };
 export const rootReducer = (state = initialState, action) => {
 
-    if (action.type === ADD_TODO) {
+    if (action.type === ADD_TASK) {
         return {
             ...state,
             todos: state.todos.concat(action.data)

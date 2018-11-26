@@ -1,8 +1,8 @@
-import { ADD_TODO } from './../constants/actionTypes';
+import { ADD_TASK } from './../constants/actionTypes';
 
 export default (data) => {
     return {
-        type: ADD_TODO,
+        type: ADD_TASK,
         data: data
     }
 }
